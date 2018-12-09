@@ -19,12 +19,12 @@ export class AppComponent implements OnInit {
         });
 
         this.cols = [
-            {field: "balance", header: "balance"},
-            {field: "age", header: "age"},
-            {field: "eyeColor", header: "eyeColor"},
-            {field: "gender", header: "gender"},
-            {field: "company", header: "company"},
-            {field: "phone", header: "phone"},
+            {field: "balance", header: "Balance"},
+            {field: "age", header: "Age"},
+            {field: "eyeColor", header: "Eye Color"},
+            {field: "gender", header: "Gender"},
+            {field: "company", header: "Company"},
+            {field: "phone", header: "Phone"},
         ];
     }
 }
