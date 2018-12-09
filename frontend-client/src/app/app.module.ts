@@ -1,9 +1,11 @@
 import {BrowserModule} from '@angular/platform-browser';
 import {NgModule} from '@angular/core';
-import { HttpModule }    from '@angular/http';
+import {HttpModule} from '@angular/http';
 
 import {AppComponent} from './app.component';
 import {PersonDataService} from "./person-data.service";
+
+import {DataTableModule, SharedModule} from 'primeng/primeng';
 
 @NgModule({
     declarations: [
@@ -11,7 +13,9 @@ import {PersonDataService} from "./person-data.service";
     ],
     imports: [
         BrowserModule,
-        HttpModule
+        HttpModule,
+        DataTableModule,
+        SharedModule
     ],
     providers: [PersonDataService],
     bootstrap: [AppComponent]
