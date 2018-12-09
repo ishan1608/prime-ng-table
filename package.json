@@ -1,0 +1,19 @@
+{
+    "name": "prime-ng-table",
+    "version": "1.0.0",
+    "description": "Prime Ng Table Example",
+    "main": "server.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "frontend": "cd frontend-client && npx ng serve --open --proxy-config proxy.config.json",
+        "server": "npm run frontend & npm start"
+    },
+    "author": "Ishan <ishan1608@gmail.com>",
+    "license": "MIT",
+    "dependencies": {
+        "@angular/cli": "^1.4.10",
+        "cors": "^2.8.5",
+        "dotenv": "^6.1.0",
+        "express": "^4.16.4"
+    }
+}
