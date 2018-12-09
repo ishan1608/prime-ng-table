@@ -8,6 +8,10 @@
         "frontend": "cd frontend-client && npx ng serve --open --proxy-config proxy.config.json",
         "server": "npm run frontend & npm start"
     },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/ishan1608/prime-ng-table.git"
+    },
     "author": "Ishan <ishan1608@gmail.com>",
     "license": "MIT",
     "dependencies": {
