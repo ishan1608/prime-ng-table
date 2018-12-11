@@ -33,12 +33,12 @@ export class AppComponent implements OnInit {
         });
 
         this.cols = [
-            {field: "balance", header: "Balance"},
-            {field: "age", header: "Age"},
-            {field: "eyeColor", header: "Eye Color"},
-            {field: "gender", header: "Gender"},
-            {field: "company", header: "Company"},
-            {field: "phone", header: "Phone"},
+            {field: "balance", header: "Balance", filter: true, filterPlaceholder:"Balance"},
+            {field: "age", header: "Age", filter: true, filterPlaceholder:"Age"},
+            {field: "eyeColor", header: "Eye Color", filter: true, filterPlaceholder:"Eye Color"},
+            {field: "gender", header: "Gender", filter: true, filterPlaceholder:"Gender"},
+            {field: "company", header: "Company", filter: true, filterPlaceholder:"Company"},
+            {field: "phone", header: "Phone", filter: true, filterPlaceholder:"Phone"},
         ];
     }
 

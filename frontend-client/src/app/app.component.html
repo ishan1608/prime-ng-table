@@ -16,7 +16,7 @@
             <div class="modal-body">
                 <!-- PrimeNG Table -->
                 <p-dataTable [value]="persons" [immutable]="false">
-                    <p-column *ngFor="let col of cols" [field]="col.field" [header]="col.header"></p-column>
+                    <p-column *ngFor="let col of cols" [field]="col.field" [header]="col.header" [filter]="col.filter" [filterPlaceholder]="col.filterPlaceholder"></p-column>
                 </p-dataTable>
             </div>
             <div class="modal-footer">
