@@ -15,8 +15,15 @@
             </div>
             <div class="modal-body">
                 <!-- PrimeNG Table -->
-                <p-dataTable [value]="persons" [immutable]="false">
-                    <p-column *ngFor="let col of cols" [field]="col.field" [header]="col.header" [filter]="col.filter" [filterPlaceholder]="col.filterPlaceholder"></p-column>
+                <div class="input-group">
+                    <input #gbSearch class="form-control py-2 border-right-0 border" type="search" placeholder="Search">
+                    <span class="input-group-append">
+                          <div class="input-group-text bg-transparent"><i class="fa fa-search"></i></div>
+                    </span>
+                </div>
+                <p-dataTable [value]="persons" [immutable]="false" [rows]="10" [globalFilter]="gbSearch">
+                    <p-column *ngFor="let col of cols" [field]="col.field" [header]="col.header" [filter]="col.filter"
+                              [filterPlaceholder]="col.filterPlaceholder"></p-column>
                 </p-dataTable>
             </div>
             <div class="modal-footer">
