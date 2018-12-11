@@ -19,7 +19,7 @@ export class AppComponent implements OnInit {
         "picture": "http://placehold.it/32x32",
         "age": 33,
         "eyeColor": "green",
-        "gender": "male",
+        "gender": "female",
         "company": "ONTALITY",
         "email": "caincharles@ontality.com",
         "phone": "+1 (822) 524-3606"
